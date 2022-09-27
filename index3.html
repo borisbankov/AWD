@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<style>
+
 		.row:nth-of-type(1) .item:nth-of-type(1), 
 		.row:nth-of-type(1) .item:nth-of-type(2){
 			background:orange;
@@ -27,7 +28,7 @@
 		.item{
 			height:20px;
 			margin:5px;
-			flex:1 0 100%;
+			flex:1 0 calc(100% - 10px);
 		}
 		.row{
 			display:flex;
