@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.div-1, .div-2{
+			background: orange;
+		}
+		.div-3{
+			background: yellow;
+		}
+		.div-4, .div-5, .div-6{
+			background: blue;
+		}
+		.div-7, .div-8, .div-9, .div-10{
+			background: gray;
+		}
+		body{
+			font-size:0px;
+		}
+		div{
+			font-size:16px;
+			margin:5px 5px;
+		}
+		section{
+			width:100%;
+		}
+		@media screen and (min-width:768px){
+			.div-7, .div-8, .div-9, .div-10{
+				width:calc(50% - 10px);
+				display:inline-block;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="div-1">Div 1</div>
+	<div class="div-2">Div 2</div>
+	<div class="div-3">Div 3</div>
+	<div class="div-4">Div 4</div>
+	<div class="div-5">Div 5</div>
+	<div class="div-6">Div 6</div>
+	<section>
+		<div class="div-7">Div 7</div>
+		<div class="div-8">Div 8</div>
+		<div class="div-9">Div 9</div>
+		<div class="div-10">Div 10</div>
+	</section>
+</body>
+</html>
